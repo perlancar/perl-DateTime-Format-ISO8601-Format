@@ -121,7 +121,7 @@ Formatting dates:
  say $format->format_date($dt_utc);           # => 2018-06-23
  say $format->format_date($dt_sometz);        # => 2018-06-23
 
- # effect of setting time_zone attribute to 'Asia/Jakarta' (which has the offset of UTC+7):
+ # effect of setting time_zone attribute to 'Asia/Jakarta' (which has the offset +07:00):
 
  say $format->format_date($dt_floating);      # => 2018-06-23
  say $format->format_date($dt_floating_frac); # => 2018-06-23.555
@@ -135,7 +135,7 @@ Formatting times:
  say $format->format_time($dt_utc);           # => 19:02:03Z
  say $format->format_time($dt_sometz);        # => 19:02:03+07:00
 
- # effect of setting time_zone attribute to 'Asia/Jakarta' (which has the offset of UTC+7):
+ # effect of setting time_zone attribute to 'Asia/Jakarta' (which has the offset of +07:00):
 
  say $format->format_time($dt_floating);      # => 19:02:03+07:00
  say $format->format_time($dt_floating_frac); # => 19:02:03.456+07:00
