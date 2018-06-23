@@ -124,7 +124,7 @@ Formatting dates:
  # effect of setting time_zone attribute to 'Asia/Jakarta' (which has the offset +07:00):
 
  say $format->format_date($dt_floating);      # => 2018-06-23
- say $format->format_date($dt_floating_frac); # => 2018-06-23.555
+ say $format->format_date($dt_floating_frac); # => 2018-06-23
  say $format->format_date($dt_utc);           # => 2018-06-24
  say $format->format_date($dt_sometz);        # => 2018-06-23
 
