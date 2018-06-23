@@ -199,7 +199,7 @@ designation:
 
 Optional. A non-negative integer. Used to control formatting (number of
 decimals) of the second fraction. The default is to only show fraction when they
-exist, with whatever precision sprintf("%s") outputs.
+exist, with whatever precision C<sprintf("%s")> outputs.
 
 
 =head1 METHODS
@@ -208,7 +208,7 @@ exist, with whatever precision sprintf("%s") outputs.
 
 Usage:
 
- DateTime::Format::ISO8601::Format->new(C<%attrs>) => obj
+ DateTime::Format::ISO8601::Format->new(%attrs) => obj
 
 =head2 format_date
 
