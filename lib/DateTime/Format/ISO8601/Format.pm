@@ -30,7 +30,7 @@ sub new {
     bless $self, $class;
 }
 
-sub _format_date_or_time_datetime {
+sub _format_date_or_time_or_datetime {
     my ($self, $which, $dt) = @_;
 
     if ($self->{time_zone}) {
@@ -84,17 +84,17 @@ sub _format_date_or_time_datetime {
 
 sub format_date {
     my ($self, $dt) = @_;
-    $self->_format_date_or_time_datetime('date', $dt);
+    $self->_format_date_or_time_or_datetime('date', $dt);
 }
 
 sub format_time {
     my ($self, $dt) = @_;
-    $self->_format_date_or_time_datetime('time', $dt);
+    $self->_format_date_or_time_or_datetime('time', $dt);
 }
 
 sub format_datetime {
     my ($self, $dt) = @_;
-    $self->_format_date_or_time_datetime('datetime', $dt);
+    $self->_format_date_or_time_or_datetime('datetime', $dt);
 }
 
 1;
