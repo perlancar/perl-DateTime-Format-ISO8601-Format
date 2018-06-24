@@ -98,7 +98,7 @@ sub format_datetime {
 }
 
 1;
-# ABSTRACT: Format DateTime as ISO8601 date/time string
+# ABSTRACT: Format DateTime object as ISO8601 date/time string
 
 =head1 SYNOPSIS
 
