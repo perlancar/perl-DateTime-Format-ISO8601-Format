@@ -1,6 +1,8 @@
 package DateTime::Format::ISO8601::Format;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 use 5.010001;
@@ -160,10 +162,7 @@ Formatting date+time:
 =head1 DESCRIPTION
 
 This module formats L<DateTime> objects as ISO8601 date/time strings. It
-supplies the formatting functionality "missing from"
-L<DateTime::Format::ISO8601>. I have suggested that the formatting functionality
-is included in the latter module (see
-L<https://rt.cpan.org/Ticket/Display.html?id=125660>).
+complements L<DateTime::Format::ISO8601>.
 
 
 =head1 ATTRIBUTES
@@ -231,7 +230,12 @@ Usage:
 
 =head1 SEE ALSO
 
-L<DateTime::Format::ISO8601>
+L<DateTime::Format::ISO8601>. Before v0.12, DateTime::Format::ISO8601 does not
+feature a C<format_datetime()> method, so DateTime::Format::ISO8601::Format
+supplies that functionality. After v0.12, DateTime::Format::ISO8601 already has
+C<format_datetime()>, but currently DateTime::Format::ISO8601::Format's version
+is faster and there's C<format_date> and C<format_time> as well. So I'm keeping
+this module for now.
 
 L<DateTime::Format::Duration::ISO8601> to parse and format ISO8601 durations.
 
